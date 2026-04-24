@@ -81,15 +81,12 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
+
 
 %for social icons
 \usepackage{fontawesome5}
@@ -129,7 +126,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -142,73 +139,202 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+    \Huge{Arnab Das}                                                                                            \\[7.5pt]
+    \href{https://github.com/thisisarnabdas}{\raisebox{-0.05\height}\faGithub\ thisisarnabdas} \ $|$ \
+    \href{mailto:this.is.arnab.das@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ this.is.arnab.das@gmail.com} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	CAREER OBJECTIVE
+%----------------------------------------------------------------------------------------
+\section{Career Objective}
+To pursue graduate studies in computer science, improve my knowledge through advanced research, and strengthen my background in computer science to develop practical solutions for real-world technological problems.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    2025 & \href{https://drive.google.com/file/d/1VTK5ltNdR83h-0LRuFuUIcngbCqoCtQM/view?usp=sharing}{\textcolor{black}{Bachelor of science in Computer Science at \textbf{BRAC University}}} \hfill (GPA: 3.89/4.00) \\
+\end{tabularx}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+%Experience
+\section{Relevant Coursework}
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\begin{joblong}{CSE496: Ethical Hacking}{}
+    \item Studied penetration testing methodologies including reconnaissance, network scanning, and brute-force techniques using tools such as Nmap
+    \item Practiced web exploitation techniques covering SQL injection, cross-site scripting, session hijacking, and OWASP Top 10 vulnerabilities using Burp Suite
+    \item Explored digital forensics and reverse engineering concepts through hands-on analysis using Autopsy and related tools
+    \item Learned security research practices including bug reporting, vulnerability impact scoring with CVSS, and attack classification using MITRE ATT\&CK
+    \item Examined offensive security topics such as malware behavior, phishing, and spam analysis through practical labs and CTF platforms
+\end{joblong}
+
+\begin{joblong}{CSE461: Introduction to Robotics}{}
+    \item Studied forward and inverse kinematics for robotic manipulators and industrial arm configurations
+    \item Practiced trajectory planning techniques including joint space, linear, and non-linear path planning
+    \item Learned PID control theory, block diagram analysis, and open/closed loop system behavior
+    \item Studied robot navigation concepts including path planning, localization, mapping, and occupancy grids
+    \item Applied machine learning and neural network concepts to robotic perception and decision-making tasks
+    \item Learned convolutional neural networks (CNNs) for computer vision applications in robotics
+\end{joblong}
+
+\begin{joblong}{CSE447: Cryptography and Cryptanalysis}{}
+    \item Learned core information security principles including confidentiality, integrity, availability, authentication, and access control
+    \item Understood classical and modern symmetric key cryptography, including Caesar ciphers, DES, Triple DES, and AES with their operational modes
+    \item Covered asymmetric cryptography concepts such as RSA, Diffie-Hellman key exchange, and elliptic curve cryptography for secure communication
+    \item Examined hash functions and their applications in message integrity, digital signatures, and password security
+    \item Understood authentication protocol design including nonces, mutual authentication, zero knowledge proofs, and real-world protocols such as SSH and SSL
+\end{joblong}
+
+\begin{joblong}{CSE426: Basic Graph Theory}{}
+    \item Learned foundational graph theory concepts including graph terminology, adjacency, degree, subgraphs, standard graph classes, and graph representation using adjacency matrices and adjacency lists
+    \item Covered paths, cycles, walks, and graph connectivity including Eulerian and Hamiltonian graphs, cut vertices, blocks, and 2-connected graphs with ear decomposition
+    \item Understood trees and their properties including rooted trees, spanning trees, Cayley's formula for counting trees, distances in graphs, and graceful labeling
+    \item Studied matching and covering problems in graphs including perfect and maximum matchings, Hall's theorem, independent sets, vertex covers, dominating sets, and graph factors
+    \item Learned planar graphs and graph coloring, covering Kuratowski's characterization, Euler's formula, vertex and edge coloring theorems, the Four Color problem, chromatic polynomials, and acyclic coloring
+\end{joblong}
+
+\begin{joblong}{CSE423: Computer Graphics}{}
+    \item Learned the fundamentals of computer graphics including display hardware, raster and vector display technologies, frame buffers, and the rendering pipeline
+    \item Practiced scan conversion and rasterization through line drawing algorithms such as DDA and Midpoint, as well as clipping techniques including Cohen-Sutherland and Cyrus-Beck
+    \item Applied 2D and 3D geometric transformations including translation, rotation, scaling, reflection, and shearing using homogeneous coordinates and composite transformation matrices
+    \item Studied color theory and illumination models covering RGB, HSV, and HLS color systems alongside Phong's ambient, diffuse, and specular reflection model with flat, Gouraud, and Phong shading
+    \item Understood perspective and parallel projection techniques and their corresponding 4×4 projection matrices for 3D-to-2D scene rendering
+\end{joblong}
+
+\begin{joblong}{CSE422: Artificial Intelligence}{}
+    \item Studied core AI concepts including problem formulation, search strategies, and agent-based decision making
+    \item Learned supervised machine learning techniques including linear regression, logistic regression, and decision trees using the ID3 algorithm
+    \item Applied probability theory and Bayes' Rule to build Naive Bayes classifiers for real-world tasks such as spam detection and medical diagnosis
+    \item Studied feedforward neural network architecture including activation functions, gradient descent, and backpropagation for model training
+    \item Practiced optimization techniques including Genetic Algorithms and Simulated Annealing for solving combinatorial problems
+\end{joblong}
+
+\begin{joblong}{CSE421: Computer Networks}{}
+    \item Learned application layer protocols including HTTP, SMTP, POP3, IMAP, and DNS for web and email communication
+    \item Covered transport layer services with a focus on UDP and TCP, including segmentation, flow control, and reliable data transfer
+    \item Learned IPv4 and IPv6 addressing structures, subnetting techniques (FLSM and VLSM), and address exhaustion solutions
+    \item Studied IPv4 packet format, fragmentation, ICMP, and network diagnostic tools such as Ping and Traceroute
+    \item Covered dynamic IP address assignment using DHCPv4 and network address translation (NAT and PAT)
+    \item Learned static and dynamic routing methods including Distance Vector (RIP) and Link State (OSPF/Dijkstra's algorithm)
+\end{joblong}
+
+\begin{joblong}{CSE370: Database Systems}{}
+    \item Learned the fundamental concepts of database systems, including DBMS architecture, data independence, and the three-schema model
+    \item Built data models using Entity-Relationship (ER) and Enhanced ER diagrams, covering entity types, relationships, constraints, specialization, and generalization
+    \item Understood the relational model including schema design, integrity constraints, and relational database operations such as insert, delete, and update
+    \item Practiced database normalization through functional dependencies and normal forms (1NF, 2NF, 3NF, and BCNF) to eliminate redundancy and anomalies
+    \item Wrote SQL queries for data definition, manipulation, aggregation, joins, views, and understood transaction management with ACID properties and concurrency control
+\end{joblong}
+
+\begin{joblong}{CSE330: Numerical Methods}{}
+    \item Studied error analysis and number representation including fixed-point arithmetic, sources of numerical error, floating-point precision, truncation and round-off errors, and machine epsilon
+    \item Explored root-finding methods for nonlinear equations including the bisection method, fixed-point iteration, Newton-Raphson, and secant methods along with convergence analysis
+    \item Covered polynomial interpolation and numerical differentiation using Newton's and Lagrange's interpolation formulas, divided differences, and finite difference approximations of derivatives
+    \item Learned numerical integration techniques including the Trapezoidal rule, Simpson's rules, Gaussian quadrature, and error estimation for approximate definite integrals
+    \item Applied numerical linear algebra methods including Gaussian elimination, LU decomposition, iterative solvers such as Jacobi and Gauss-Seidel, and least-squares curve fitting
+\end{joblong}
+
+\begin{joblong}{CSE340: Computer Organization and Architecture}{}
+    \item Learned MIPS assembly language including instruction formats, register conventions, logical operations, and branching for decision-making
+    \item Understood procedure calling conventions including stack management, argument passing, and return address handling in hardware
+    \item Covered integer arithmetic operations including addition, subtraction, and multiplication at the hardware level with signed and unsigned representations
+    \item Gained understanding of processor datapath and control unit design, including single-cycle and pipelined implementation schemes
+    \item Studied pipeline hazards including data, structural, and control hazards, and advanced techniques such as forwarding, stalling, and instruction-level parallelism
+\end{joblong}
+
+\begin{joblong}{CSE331: Automata and Computability}{}
+    \item Studied formal language theory including symbols, strings, alphabets, and language operations such as Kleene closure and concatenation
+    \item Learned regular expressions and their properties, and practiced constructing regular expressions for pattern-based languages
+    \item Designed and analyzed Deterministic and Nondeterministic Finite Automata (DFA and NFA), including conversion between the two using subset construction and minimization via Hopcroft's Algorithm
+    \item Covered conversion techniques between regular expressions, NFAs, and DFAs using Thompson's Construction and the State Elimination Method
+    \item Learned Context-Free Grammars (CFG) and Pushdown Automata (PDA) to describe and recognize languages beyond the capability of finite automata
+\end{joblong}
+
+\begin{joblong}{STA301: Modern Probability Theory \& Stochastic Processes}{}
+    \item Studied advanced probability theory including random variables, probability distributions, and expectation for both discrete and continuous cases
+    \item Learned key discrete and continuous probability distributions such as Binomial, Poisson, Exponential, and Normal along with the Central Limit Theorem
+    \item Explored the foundations of stochastic processes including Markov Chains, transition probability matrices, and the Chapman-Kolmogorov Equation
+    \item Applied stochastic models including Poisson Processes, Random Walk, and Birth-Death Processes to analyze real-life problems
+    \item Covered Hidden Markov Models and Queueing Processes with emphasis on limiting behavior and state classification
+\end{joblong}
+
+\begin{joblong}{CSE221: Algorithms}{}
+    \item Learned core algorithm design paradigms including Divide and Conquer, Dynamic Programming, and Greedy methods
+    \item Studied asymptotic analysis techniques to evaluate time and space complexity of algorithms
+    \item Implemented and compared graph algorithms including BFS, DFS, Dijkstra, Bellman-Ford, and Minimum Spanning Trees
+    \item Practiced sorting algorithms such as Merge Sort, Quick Sort, and Heap Sort through weekly lab sessions
+    \item Explored NP-completeness, problem reductions, and the boundaries of computational tractability
+\end{joblong}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{AetherGuard: A Private Password Manager} & \hfill \href{https://github.com/thisisarnabdas/AetherGuard}{Link to Project}                                                                                                                                                                                                                                       \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built a full-stack password manager using Python and Flask; implemented AES-256 encryption for stored credentials and Argon2 password hashing for user authentication, with full CRUD operations, random password generation, account management features, and a dark-themed glassmorphism web interface backed by a local SQLite database.} \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Demo Stock Exchange Interface} & \hfill \href{https://github.com/thisisarnabdas/DSE}{Link to Project}                                                                                                                                                                                \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built a Demo Stock Exchange desktop app with Python, CustomTkinter, and SQLite, featuring user authentication (login/signup with NID and phone validation), wallet management, portfolio tracking, stock trading, and a responsive UI with dark/light mode toggle.} \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Air Quality Prediction: ML Classification Project} & \hfill \href{https://github.com/thisisarnabdas/CSE422_Project-Air-Quality-Prediction-}{Link to Project}                                                                                                                                                                                                                                                                                                        \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+        Built an air quality prediction system on the UCI Air Quality dataset using Decision Tree, Random Forest, and KNN classifiers; engineered a CO-level target variable from CO\textsubscript{GT} readings with full preprocessing pipeline (missing value imputation, column pruning, label encoding); achieved 99.68\% test accuracy with Random Forest; conducted EDA with distribution plots, correlation analysis, and violin charts to derive environmental insights.
+    } \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Network Intrusion Detection System} & \hfill \href{https://github.com/thisisarnabdas/Aegis}{Link to Project}                                                                                                                                                                                                                                                        \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built a binary network intrusion detection system using the KDD Cup 1999 dataset; applied MinMax normalization, PCA dimensionality reduction, and categorical encoding as a preprocessing pipeline; trained a deep neural network (Keras Sequential) with ReLU and Sigmoid activations to classify network traffic as intrusion or non-intrusion.} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%	CERTIFICATES
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\section{Certifications}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Career Essentials in Software Development} & \hfill \href{https://www.linkedin.com/learning/certificates/b47ab2e721fb8ba120d27288096edeca25ef7cfba7b85efdbd84445d1ec05b55}{View Certificate} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Issued by Microsoft \hfill 2024}                                                                                                                                            \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Career Essentials in Generative AI} & \hfill \href{https://www.linkedin.com/learning/certificates/6f72b0e48a5817dc558db49ca0673a70bb89d664f12973b92fb28f3bbaa996db}{View Certificate} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Issued by Microsoft \hfill 2024}                                                                                                                                     \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Champion – Creative Talent Search Competition} & \hfill \href{https://drive.google.com/file/d/1m3npleUNXnW2Rd6uJq2z2-FtGwx6_NgP/view?usp=sharing}{View Certificate} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Organized by Government of the People’s Republic of Bangladesh \hfill 2017}                                                                        \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+
+    Programming Languages & \normalsize{JavaScript, R, Python, C, C++} \\
+
+    Web Technologies      & \normalsize{HTML, CSS, JavaScript}         \\
+
+    Systems \& Scripting  & \normalsize{Bash Shell, Linux}             \\
+
+    Database              & \normalsize{PostgreSQL}                    \\
+
+    Tools \& Technologies & \normalsize{Git, Github, LaTeX}            \\
 \end{tabularx}
 
 \vfill
